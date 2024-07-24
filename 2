@@ -1,0 +1,55 @@
+uniq_v <- unique (v)
+
++ uniq_v[which.max(tabulate (match(v, uniq_v)))]
+
++}
+
+>
+
+> mode age <- get mode (age values)
+
+> cat ("Mode of the data:", mode age, "\n")
+
+Mode of the data: 25
+
+>
+
+> freq_table <- table (age_values)
+
+> modalities <- names (freq_table[freq_table == max(freq_table)])
+
+> num modes <- length (modalities)
+
+> modality comment <- switch(num modes,
+
+"Unimodal",
+
+"Bimodal",
+
+"Trimodal",
+
+paste (num modes, "modes"))
+
+> cat ("Data's modality:", modality_comment, "\n")
+
+Data's modality: Bimodal
+
+> midrange age <- (min (age values) + max(age values)) / 2
+
+> cat ("Midrange of the data:", midrange_age, "\n")
+
+Midrange of the data: 41.5
+
+> Q1 <- quantile (age_values, 0.25)
+
+> Q3 <- quantile (age_values, 0.75)
+
+> cat ("First quartile (Q1):", Q1, "\n")
+
+First quartile (Q1): 20.5
+
+> cat ("Third quartile (Q3):", Q3, "\n")
+
+Third quartile (Q3): 35
+
+>1
