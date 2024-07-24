@@ -1,0 +1,39 @@
+> Compute cumulative frequencies
+
+> cumulative_frequencies <- cumsum (frequencies)
+
+> N<- sum(frequencies)
+
+> N half <-N/2
+
+> median_class_index <- which (cumulative_frequencies >= N_half) [1]
+
+> lower boundaries <- c(1, 5, 15, 20, 50, 80)
+
+> L <- lower_boundaries (median_class_index]
+
+> f <- frequencies [median_class_index]
+
+> if (median_class_index == 1) {
+
+F-0
+
+} else {
+
+F<- cumulative_frequencies[median_class_index 1]
+
++}
+
+> class_widths <- c(4, 10, 5, 30, 30, 30)
+
+> h <-class_widths [median_class_index]
+
+> median <- L+ ((N_half F) / f) 
+
+> print (paste ("The approximate median value is:", round (median, 2)))
+
+[1] "The approximate median value is: 32.94"
+
+>1
+
+4
