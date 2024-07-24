@@ -1,0 +1,43 @@
+pencils <- c(9, 25, 23, 12, 11, 6, 7, 8, 9, 10)
+
+mean_pencils <- mean (pencils)
+
+cat ("Mean number of pencils:\n")
+
+ean number of pencils:
+
+print (mean_pencils)
+
+1] 12
+
+median_pencils <- median (pencils)
+
+cat ("Median number of pencils:\n")
+
+edian number of pencils:
+
+print (median_pencils)
+
+1] 9.5
+
+get mode <- function (v) {
+
+uniq_v <- unique (v)
+
+tabulated <- tabulate (match(v, uniq_v))
+
+mode_val <- uniq_v[which.max(tabulated)]
+
+return (mode_val)
+
+}
+
+mode_pencils <- get mode (pencils)
+
+cat ("Mode number of pencils:\n")
+
+ode number of pencils:
+
+print (mode_pencils)
+
+1] 9
