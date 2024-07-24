@@ -1,0 +1,51 @@
+age_v
+
+min_value <- min(ages)
+
+max_value <- max (ages)
+
+min_max_normalized_value <- (age_value min_value) / (max_value min_value)
+
+cat("Min-max normalized value for age 35:\n")
+
+in-max normalized value for age 35:
+
+print(min_max_normalized_value)
+
+1] 0.4444444
+
+mean age <- mean (ages) mean_a
+
+sd_age < 12.94 Given standard deviation
+
+z_score_normalized_value <- (age_value mean_age) / sd_age
+
+cat ("Z-score normalized value for age 35:\n")
+
+-score normalized value for age 35:
+
+print (z_score_normalized_value)
+
+1] -0.03863988
+
+#(iii) Normalization by decimal scaling
+
+decimal_scaling_normalize <- function(x) {
+
+j-max (abs(x))
+
+k<- nchar(as.character(j))
+
+return(x/ (10^k))
+
+}
+
+decimal_scaled_value <- decimal_scaling_normalize (age_value)
+
+cat("Decimal scaling normalized value for age 35:\n")
+
+ecimal scaling normalized value for age 35:
+
+print (decimal_scaled_value)
+
+1] 0.35
