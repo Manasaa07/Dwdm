@@ -1,0 +1,43 @@
+data values <- c(200, 300, 400, 600, 1000)
+
+(a) Min-max normalization
+
+min_value <min (data_values)
+
+max value <- max(data values)
+
+min_max_normalize <- function (x, min_val, max_val) {
+
+(xmin_val) / (max_val min_val)
+
+}
+
+normalized_min_max <- sapply(data_values, min_max_normalize, min_valmin_value, max_val = max_value)
+
+cat ("Min-max normalized data (min=0, max-1):\n")
+
+in-max normalized data (min=0, max=1):
+
+print (normalized min max)
+
+1] 0.000 0.125 0.250 0.500 1.000
+
+(b) Z-score normalization
+
+mean value <- mean (data values)
+
+sd_value <- sd (data_values)
+
+z_score_normalize <- function(x, mean_val, sd_val) {
+
+(x mean val) / sd val
+
+normalized_z_score <- sapply(data_values, z_score_normalize, mean_val mean_value, sd_val = sd_value)
+
+cat("Z-score normalized data:\n")
+
+-score normalized data:
+
+print (normalized_z_score)
+
+1] -0.9486833 -0.6324555 -0.3162278 0.3162278 1.5811388
